@@ -1,4 +1,5 @@
 import { IonicVue } from '@ionic/vue';
+import { VueQueryPlugin } from '@tanstack/vue-query';
 import { createApp } from 'vue';
 
 import App from './App.vue';
@@ -29,12 +30,12 @@ import '@ionic/vue/css/display.css';
 
 /* @import '@ionic/vue/css/palettes/dark.always.css'; */
 /* @import '@ionic/vue/css/palettes/dark.class.css'; */
-import '@ionic/vue/css/palettes/dark.system.css';
+// import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
 
-const app = createApp(App).use(IonicVue).use(router);
+const app = createApp(App).use(IonicVue).use(router).use(VueQueryPlugin);
 
 router.isReady().then(() => {
   app.mount('#app');

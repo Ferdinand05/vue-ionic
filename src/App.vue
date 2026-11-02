@@ -1,5 +1,6 @@
 <template>
   <ion-app>
+    <!-- Konten Utama Aplikasi -->
     <ion-router-outlet />
   </ion-app>
 </template>

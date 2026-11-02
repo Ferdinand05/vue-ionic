@@ -6,11 +6,12 @@ import HomePage from '../views/HomePage.vue';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/news',
   },
+
   {
-    path: '/home',
-    name: 'Home',
+    path: '/news',
+    name: 'news.index',
     component: HomePage,
   },
 ];

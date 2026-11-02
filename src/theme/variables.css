@@ -1,2 +1,13 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+@import 'tailwindcss';
+
+:root {
+  /* Mengubah font bawaan Ionic */
+  --ion-font-family: 'Times New Roman', Times, serif;
+}
+
+/* Memastikan elemen HTML biasa (div, p, span) juga menggunakan font yang sama */
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
